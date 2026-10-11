@@ -28,15 +28,6 @@ This project was created to practice front-end web development and improve pract
 - CSS3 – For styling and responsive design.
 - JavaScript – For interactive features and shopping cart functionality.
 
-📁 Project Structure
-
-ecommerce-website/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
 🚀 How to Run the Project
 
 1. Download or clone the project repository.
