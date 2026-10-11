@@ -1,1 +1,81 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">Shop<span>Ease</span></a>
+
+    <div class="search-box">
+      <input type="text" id="searchInput"
+             placeholder="Search products...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <button class="cart-button" id="cartToggle">
+      🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="tagline">YOUR EVERYDAY SHOPPING DESTINATION</p>
+      <h1>Discover Products<br>You'll Love.</h1>
+      <p>Great products, great prices, all in one place.</p>
+      <a href="#products" class="shop-button">Shop Now →</a>
+    </div>
+  </section>
+
+  <main class="container" id="products">
+    <div class="section-heading">
+      <div>
+        <h2>Our Products</h2>
+        <p>Find something you love.</p>
+      </div>
+
+      <select id="categoryFilter" aria-label="Filter products">
+        <option value="All">All Categories</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Accessories">Accessories</option>
+      </select>
+    </div>
+
+    <div id="productGrid" class="product-grid"></div>
+    <p id="emptyMessage" hidden>No products found.</p>
+  </main>
+
+  <aside id="cartPanel" class="cart-panel" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="close-button"
+              aria-label="Close cart">✕</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <h3>Total: <span id="cartTotal">₹0.00</span></h3>
+      <button id="checkoutBtn" class="checkout-button">
+        Proceed to Checkout
+      </button>
+      <p id="checkoutMessage" aria-live="polite"></p>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay"></div>
+
+  <footer>
+    <p>© 2026 ShopEase. Made with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
